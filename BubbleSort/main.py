@@ -1,7 +1,7 @@
 # This is a sample Python script.
 import sys
-sys.path.append('../Visualization/colors.py')
-from Visualization.colors import *
+sys.path.append('../Visual/colors.py')
+from Visual.colors import *
 import time
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.

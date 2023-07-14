@@ -7,7 +7,7 @@ from BubbleSort.main import bubble_sort_visual
 from QuickSort.main import call_quick_sort_visual
 # Main window
 window = Tk()
-window.title("Sorting Algorithms Visualization")
+window.title("Sorting Algorithms Visual")
 window.maxsize(1000, 800)
 window.config(bg=WHITE)
 
