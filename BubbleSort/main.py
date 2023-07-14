@@ -1,4 +1,6 @@
 # This is a sample Python script.
+import sys
+sys.path.append('../Visualization/colors.py')
 from Visualization.colors import *
 import time
 # Press Shift+F10 to execute it or replace it with your code.
