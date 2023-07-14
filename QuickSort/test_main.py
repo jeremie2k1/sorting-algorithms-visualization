@@ -1,7 +1,7 @@
 from unittest import TestCase
 from numpy import random
 import numpy as np
-import main
+from QuickSort.main import call_quick_sort
 
 class TestQuickSort(TestCase):
     def test_size_1(self, size=1):
@@ -11,7 +11,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -25,7 +25,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -38,7 +38,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -52,7 +52,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -66,7 +66,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -80,7 +80,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -94,7 +94,7 @@ class TestQuickSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.call_quick_sort(arr))
+        arr = np.array(call_quick_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))

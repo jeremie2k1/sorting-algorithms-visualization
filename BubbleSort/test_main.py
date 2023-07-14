@@ -2,8 +2,7 @@ from unittest import TestCase
 # import random
 from numpy import random
 import numpy as np
-import main
-
+from BubbleSort.main import bubble_sort
 class TestBubbleSort(TestCase):
 
     def test_size_1(self, size=1):
@@ -13,7 +12,7 @@ class TestBubbleSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.bubble_sort(arr))
+        arr = np.array(bubble_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -27,7 +26,7 @@ class TestBubbleSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.bubble_sort(arr))
+        arr = np.array(bubble_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -40,7 +39,7 @@ class TestBubbleSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.bubble_sort(arr))
+        arr = np.array(bubble_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -54,7 +53,7 @@ class TestBubbleSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.bubble_sort(arr))
+        arr = np.array(bubble_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))
@@ -68,7 +67,7 @@ class TestBubbleSort(TestCase):
         arr_cp = arr.copy()
         # get bubble sort result
         arr = list(arr)
-        arr = np.array(main.bubble_sort(arr))
+        arr = np.array(bubble_sort(arr))
 
         # compare with numpy sort lib
         # print(np.sort(arr_cp))

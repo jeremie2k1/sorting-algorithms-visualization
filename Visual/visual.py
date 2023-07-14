@@ -3,6 +3,7 @@ from tkinter import ttk
 import random
 
 from colors import *
+
 from BubbleSort.main import bubble_sort_visual
 from QuickSort.main import call_quick_sort_visual
 # Main window
@@ -58,7 +59,7 @@ def set_speed():
     elif speed_menu.get() == 'Medium':
         return 0.1
     else:
-        return 0.01
+        return 0.0001
 
 
 def sort():
