@@ -1,6 +1,5 @@
 # Simulation of sorting algorithms
  - Use `Tk GUI` to simulate sorting algorithms
-<br/>
  - Compare the speed of sorting algorithms.
 ## Example
 * **Quick sort**
