@@ -6,6 +6,7 @@ from colors import *
 
 from BubbleSort.main import bubble_sort_visual
 from QuickSort.main import call_quick_sort_visual
+from CountingSort.main import counting_sort_visual
 # Main window
 window = Tk()
 window.title("Sorting Algorithms Visual")
@@ -70,6 +71,9 @@ def sort():
         bubble_sort_visual(data, drawData, timeTick)
     elif algo_menu.get() == 'Quick Sort':
         call_quick_sort_visual(data, drawData, timeTick)
+    elif algo_menu.get() == 'Counting Sort':
+        print(data)
+        counting_sort_visual(data, drawData, timeTick)
     else:
         return
 
