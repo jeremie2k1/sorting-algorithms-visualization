@@ -10,6 +10,7 @@ from CountingSort.main import counting_sort_visual
 from InsertSort.main import insert_sort_visual
 from SelectionSort.main import selection_sort_visual
 from MergeSort.main import merge_sort_visual
+from HeapSort.main import heap_sort_visual
 # Main window
 window = Tk()
 window.title("Sorting Algorithms Visual")
@@ -83,7 +84,7 @@ def sort():
     elif algo_menu.get() == 'Merge Sort':
         merge_sort_visual(data, 0, len(data) - 1, drawData, timeTick)
     else:
-        return
+        heap_sort_visual(data, drawData, timeTick)
 
 ### User interface ###
 UI_frame = Frame(window, width=900, height=300, bg=WHITE)
