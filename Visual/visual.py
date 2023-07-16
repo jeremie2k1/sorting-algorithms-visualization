@@ -7,6 +7,9 @@ from colors import *
 from BubbleSort.main import bubble_sort_visual
 from QuickSort.main import call_quick_sort_visual
 from CountingSort.main import counting_sort_visual
+from InsertSort.main import insert_sort_visual
+from SelectionSort.main import selection_sort_visual
+from MergeSort.main import merge_sort_visual
 # Main window
 window = Tk()
 window.title("Sorting Algorithms Visual")
@@ -58,7 +61,7 @@ def set_speed():
     if speed_menu.get() == 'Slow':
         return 0.3
     elif speed_menu.get() == 'Medium':
-        return 0.1
+        return 0.01
     else:
         return 0.0001
 
@@ -72,8 +75,13 @@ def sort():
     elif algo_menu.get() == 'Quick Sort':
         call_quick_sort_visual(data, drawData, timeTick)
     elif algo_menu.get() == 'Counting Sort':
-        print(data)
         counting_sort_visual(data, drawData, timeTick)
+    elif algo_menu.get() == 'Insertion Sort':
+        insert_sort_visual(data, drawData, timeTick)
+    elif algo_menu.get() == 'Selection Sort':
+        selection_sort_visual(data, drawData, timeTick)
+    elif algo_menu.get() == 'Merge Sort':
+        merge_sort_visual(data, 0, len(data) - 1, drawData, timeTick)
     else:
         return
 
